@@ -1,0 +1,1041 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Premier healthcare services in the United States. Board-certified physicians, advanced diagnostics, and compassionate patient care. Schedule your appointment today." />
+    <meta name="keywords" content="healthcare, primary care, family medicine, urgent care, telehealth, American medical center" />
+    <meta name="author" content="American Healthcare Partners" />
+    <meta name="robots" content="index, follow" />
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="American Healthcare Partners | Compassionate Care, Advanced Medicine" />
+    <meta property="og:description" content="Trusted healthcare for you and your family. Board-certified physicians, same-day appointments, and 24/7 patient support." />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:image" content="https://example.com/og-image.jpg" />
+    
+    <!-- Security & Privacy -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta http-equiv="X-Frame-Options" content="DENY" />
+    
+    <title>American Healthcare Partners | Compassionate Care, Advanced Medicine</title>
+    
+    <!-- Preconnect for Performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet" />
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏥</text></svg>" />
+</head>
+<body>
+    <!-- Skip to Content (Accessibility) -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <!-- Loading State -->
+    <div id="page-loader" class="page-loader" aria-hidden="true">
+        <div class="loader-content">
+            <div class="loader-spinner"></div>
+            <p class="loader-text">Loading your care experience...</p>
+        </div>
+    </div>
+
+    <!-- Emergency Banner (Always Visible) -->
+    <div class="emergency-banner" role="alert" aria-live="assertive">
+        <div class="container emergency-container">
+            <i class="fa-solid fa-truck-medical" aria-hidden="true"></i>
+            <p class="emergency-text">
+                <strong>Medical Emergency?</strong> Call <a href="tel:911" class="emergency-link">911</a> or go to your nearest emergency room. 
+                <span class="emergency-separator">|</span> 
+                For non-emergencies: <a href="tel:+18005551234" class="emergency-phone">1-800-555-1234</a>
+            </p>
+        </div>
+    </div>
+
+    <!-- Sticky Header -->
+    <header class="header" id="header" role="banner">
+        <div class="container header-container">
+            <!-- Logo -->
+            <a href="#" class="logo" aria-label="American Healthcare Partners Home">
+                <div class="logo-icon" aria-hidden="true">
+                    <i class="fa-solid fa-heart-pulse"></i>
+                </div>
+                <div class="logo-text">
+                    <span class="logo-name">American Healthcare</span>
+                    <span class="logo-tagline">Partners</span>
+                </div>
+            </a>
+            
+            <!-- Desktop Navigation -->
+            <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
+                <ul class="nav-list">
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#providers" class="nav-link">Our Providers</a></li>
+                    <li><a href="#locations" class="nav-link">Locations</a></li>
+                    <li><a href="#patients" class="nav-link">Patient Resources</a></li>
+                    <li><a href="#about" class="nav-link">About Us</a></li>
+                </ul>
+            </nav>
+            
+            <!-- Header Actions -->
+            <div class="header-actions">
+                <a href="tel:+18005551234" class="btn btn-primary btn-sm header-cta" aria-label="Call to schedule appointment">
+                    <i class="fa-solid fa-phone" aria-hidden="true"></i>
+                    <span class="btn-text">Schedule</span>
+                </a>
+                <a href="#patient-portal" class="btn btn-outline btn-sm header-cta" id="portal-btn">
+                    <i class="fa-solid fa-user-injured" aria-hidden="true"></i>
+                    <span class="btn-text">Patient Portal</span>
+                </a>
+            </div>
+            
+            <!-- Mobile Menu Toggle -->
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-menu">
+                <span class="hamburger-line" aria-hidden="true"></span>
+                <span class="hamburger-line" aria-hidden="true"></span>
+                <span class="hamburger-line" aria-hidden="true"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu-overlay" id="mobile-overlay" aria-hidden="true"></div>
+    <nav class="mobile-menu" id="mobile-menu" role="navigation" aria-label="Mobile navigation">
+        <div class="mobile-menu-header">
+            <button class="mobile-menu-close" id="mobile-close" aria-label="Close menu">
+                <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+            </button>
+            <span class="mobile-menu-title">Menu</span>
+        </div>
+        <ul class="mobile-nav-list">
+            <li><a href="#services" class="mobile-nav-link">Services</a></li>
+            <li><a href="#providers" class="mobile-nav-link">Our Providers</a></li>
+            <li><a href="#locations" class="mobile-nav-link">Locations</a></li>
+            <li><a href="#patients" class="mobile-nav-link">Patient Resources</a></li>
+            <li><a href="#about" class="mobile-nav-link">About Us</a></li>
+            <li class="mobile-divider"></li>
+            <li><a href="tel:+18005551234" class="mobile-nav-link accent"><i class="fa-solid fa-phone" aria-hidden="true"></i> Schedule Appointment</a></li>
+            <li><a href="#patient-portal" class="mobile-nav-link"><i class="fa-solid fa-user-injured" aria-hidden="true"></i> Patient Portal</a></li>
+        </ul>
+        <div class="mobile-menu-footer">
+            <p class="mobile-emergency">
+                <i class="fa-solid fa-truck-medical" aria-hidden="true"></i>
+                Emergency: <a href="tel:911">911</a>
+            </p>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero" aria-labelledby="hero-title">
+        <div class="hero-bg" aria-hidden="true"></div>
+        <div class="hero-overlay" aria-hidden="true"></div>
+        <div class="container hero-content">
+            <div class="hero-text reveal">
+                <span class="hero-badge">
+                    <i class="fa-solid fa-certificate" aria-hidden="true"></i>
+                    Joint Commission Accredited
+                </span>
+                <h1 id="hero-title" class="hero-title">
+                    Your Health, <span class="accent">Our Priority</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Compassionate, comprehensive healthcare from board-certified physicians. 
+                    Same-day appointments, telehealth visits, and personalized care plans for you and your family.
+                </p>
+                <div class="hero-ctas">
+                    <a href="#appointment" class="btn btn-primary btn-lg">
+                        <i class="fa-regular fa-calendar-check" aria-hidden="true"></i>
+                        Schedule Appointment
+                    </a>
+                    <a href="#telehealth" class="btn btn-outline btn-lg">
+                        <i class="fa-solid fa-video" aria-hidden="true"></i>
+                        Start Telehealth Visit
+                    </a>
+                </div>
+                <div class="trust-indicators" role="list">
+                    <div class="trust-item" role="listitem">
+                        <i class="fa-solid fa-user-doctor" aria-hidden="true"></i>
+                        <span>150+ Board-Certified Physicians</span>
+                    </div>
+                    <div class="trust-item" role="listitem">
+                        <i class="fa-solid fa-star" aria-hidden="true"></i>
+                        <span>4.9/5 Patient Satisfaction</span>
+                    </div>
+                    <div class="trust-item" role="listitem">
+                        <i class="fa-solid fa-clock" aria-hidden="true"></i>
+                        <span>Same-Day Appointments</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <a href="#services" class="scroll-down" aria-label="Scroll to services">
+                <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Quick Access Bar -->
+    <section class="quick-access" aria-label="Quick actions">
+        <div class="container">
+            <div class="quick-access-grid">
+                <a href="#appointment" class="quick-card reveal">
+                    <div class="quick-icon primary">
+                        <i class="fa-regular fa-calendar-plus" aria-hidden="true"></i>
+                    </div>
+                    <div class="quick-content">
+                        <h3>Book Appointment</h3>
+                        <p>Schedule in under 2 minutes</p>
+                    </div>
+                    <i class="fa-solid fa-arrow-right quick-arrow" aria-hidden="true"></i>
+                </a>
+                <a href="#telehealth" class="quick-card reveal">
+                    <div class="quick-icon secondary">
+                        <i class="fa-solid fa-video" aria-hidden="true"></i>
+                    </div>
+                    <div class="quick-content">
+                        <h3>Telehealth Visit</h3>
+                        <p>See a doctor from home</p>
+                    </div>
+                    <i class="fa-solid fa-arrow-right quick-arrow" aria-hidden="true"></i>
+                </a>
+                <a href="#portal" class="quick-card reveal">
+                    <div class="quick-icon accent">
+                        <i class="fa-solid fa-file-medical" aria-hidden="true"></i>
+                    </div>
+                    <div class="quick-content">
+                        <h3>Patient Portal</h3>
+                        <p>Access records & messages</p>
+                    </div>
+                    <i class="fa-solid fa-arrow-right quick-arrow" aria-hidden="true"></i>
+                </a>
+                <a href="#insurance" class="quick-card reveal">
+                    <div class="quick-icon info">
+                        <i class="fa-solid fa-hand-holding-medical" aria-hidden="true"></i>
+                    </div>
+                    <div class="quick-content">
+                        <h3>Insurance Info</h3>
+                        <p>Verify your coverage</p>
+                    </div>
+                    <i class="fa-solid fa-arrow-right quick-arrow" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services" aria-labelledby="services-title">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 id="services-title" class="section-title">Comprehensive <span class="accent">Healthcare Services</span></h2>
+                <p class="section-subtitle">From preventive care to specialized treatment, we provide the full spectrum of medical services under one roof.</p>
+            </div>
+            
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <article class="service-card reveal">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-stethoscope" aria-hidden="true"></i>
+                    </div>
+                    <h3 class="service-title">Primary Care</h3>
+                    <p class="service-desc">Annual physicals, chronic disease management, vaccinations, and personalized wellness plans for all ages.</p>
+                    <ul class="service-features" aria-label="Primary care features">
+                        <li><i class="fa-solid fa-check" aria-hidden="true"></i> Preventive screenings</li>
+                        <li><i class="fa-solid fa-check" aria-hidden="true"></i> Chronic condition management</li>
+                        <li><i class="fa-solid fa-check" aria-hidden="true"></i> Pediatric & adult care</li>
+                    </ul>
+                    <a href="#appointment" class="service-link" aria-label="Schedule primary care appointment">
+                        Schedule Visit <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                    </a>
+                </article>
+                
+                <!-- Service 2 -->
+                <article class="service-card reveal">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-heart" aria-hidden="true"></i>
+                    </div>
+                    <h3 class="service-title">Specialty Care</h3>
+                    <p class="service-desc">Expert care from cardiologists, endocrinologists, orthopedists, and other board-certified specialists.</p>
+                    <ul class="service-features" aria-label="Specialty care features">
+                        <li><i class="fa-solid fa-check" aria-hidden="true"></i> In-house specialists</li>
+                        <li><i class="fa-solid fa-check" aria-hidden="true"></i> Coordinated care plans</li>
+                        <li><i class="fa-solid fa-check" aria-hidden="true"></i> Advanced diagnostics</li>
+                    </ul>
+                    <a href="#providers" class="service-link" aria-label="View our specialists">
+                        Meet Our Specialists <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                    </a>
+                </article>
+                
+                <!-- Service 3 -->
+                <article class="service-card reveal">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-video" aria-hidden="true"></i>
+                    </div>
+                    <h3 class="service-title">Telehealth</h3>
+                    <p class="service-desc">Secure video visits for consultations, follow-ups, mental health support, and minor acute concerns.</p>
+                    <ul class="service-features" aria-label="Telehealth features">
+                        <li><i class="fa-solid fa-check" aria-hidden="true"></i> HIPAA-compliant platform</li>
+                        <li><i class="fa-solid fa-check" aria-hidden="true"></i> Available 7 days/week</li>
+                        <li><i class="fa-solid fa-check" aria-hidden="true"></i> Prescriptions & referrals</li>
+                    </ul>
+                    <a href="#telehealth" class="service-link" aria-label="Start a telehealth visit">
+                        Start Virtual Visit <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                    </a>
+                </article>
+                
+                <!-- Service 4 -->
+                <article class="service-card reveal">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-truck-medical" aria-hidden="true"></i>
+                    </div>
+                    <h3 class="service-title">Urgent Care</h3>
+                    <p class="service-desc">Walk-in care for non-life-threatening conditions: minor injuries, infections, flu symptoms, and more.</p>
+                    <ul class="service-features" aria-label="Urgent care features">
+                        <li><i class="fa-solid fa-check" aria-hidden="true"></i> No appointment needed</li>
+                        <li><i class="fa-solid fa-check" aria-hidden="true"></i> On-site lab & X-ray</li>
+                        <li><i class="fa-solid fa-check" aria-hidden="true"></i> Extended hours</li>
+                    </ul>
+                    <a href="#locations" class="service-link" aria-label="Find urgent care location">
+                        Find Location <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                    </a>
+                </article>
+            </div>
+            
+            <div class="services-cta reveal">
+                <p>Not sure which service you need?</p>
+                <a href="#appointment" class="btn btn-primary">Speak with a Care Coordinator</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Providers Section -->
+    <section class="providers" id="providers" aria-labelledby="providers-title">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 id="providers-title" class="section-title">Meet Our <span class="accent">Expert Providers</span></h2>
+                <p class="section-subtitle">Board-certified physicians and healthcare professionals dedicated to your wellbeing.</p>
+            </div>
+            
+            <div class="providers-grid">
+                <!-- Provider 1 -->
+                <article class="provider-card reveal">
+                    <div class="provider-image">
+                        <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" 
+                             alt="Dr. Sarah Mitchell, Family Medicine" 
+                             loading="lazy"
+                             width="400"
+                             height="400" />
+                        <div class="provider-badge">Board Certified</div>
+                    </div>
+                    <div class="provider-info">
+                        <h3 class="provider-name">Dr. Sarah Mitchell, MD</h3>
+                        <p class="provider-specialty">Family Medicine</p>
+                        <p class="provider-bio">15+ years experience in preventive care and chronic disease management. Passionate about patient education.</p>
+                        <div class="provider-meta">
+                            <span><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Downtown Clinic</span>
+                            <span><i class="fa-solid fa-star" aria-hidden="true"></i> 4.9 (247 reviews)</span>
+                        </div>
+                        <a href="#appointment" class="btn btn-outline btn-sm">Schedule with Dr. Mitchell</a>
+                    </div>
+                </article>
+                
+                <!-- Provider 2 -->
+                <article class="provider-card reveal">
+                    <div class="provider-image">
+                        <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" 
+                             alt="Dr. James Chen, Cardiology" 
+                             loading="lazy"
+                             width="400"
+                             height="400" />
+                        <div class="provider-badge">Fellowship Trained</div>
+                    </div>
+                    <div class="provider-info">
+                        <h3 class="provider-name">Dr. James Chen, MD, FACC</h3>
+                        <p class="provider-specialty">Cardiology</p>
+                        <p class="provider-bio">Specializing in preventive cardiology and heart failure management. Advocate for lifestyle-based heart health.</p>
+                        <div class="provider-meta">
+                            <span><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Heart Center</span>
+                            <span><i class="fa-solid fa-star" aria-hidden="true"></i> 5.0 (189 reviews)</span>
+                        </div>
+                        <a href="#appointment" class="btn btn-outline btn-sm">Schedule with Dr. Chen</a>
+                    </div>
+                </article>
+                
+                <!-- Provider 3 -->
+                <article class="provider-card reveal">
+                    <div class="provider-image">
+                        <img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" 
+                             alt="Dr. Maria Rodriguez, Pediatrics" 
+                             loading="lazy"
+                             width="400"
+                             height="400" />
+                        <div class="provider-badge">Pediatric Specialist</div>
+                    </div>
+                    <div class="provider-info">
+                        <h3 class="provider-name">Dr. Maria Rodriguez, MD, FAAP</h3>
+                        <p class="provider-specialty">Pediatrics</p>
+                        <p class="provider-bio">Dedicated to children's health from newborn to young adult. Focus on developmental milestones and family-centered care.</p>
+                        <div class="provider-meta">
+                            <span><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Family Clinic</span>
+                            <span><i class="fa-solid fa-star" aria-hidden="true"></i> 4.9 (312 reviews)</span>
+                        </div>
+                        <a href="#appointment" class="btn btn-outline btn-sm">Schedule with Dr. Rodriguez</a>
+                    </div>
+                </article>
+            </div>
+            
+            <div class="providers-cta reveal">
+                <a href="#providers" class="btn btn-outline">View All Providers</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Patient Resources Section -->
+    <section class="patients" id="patients" aria-labelledby="patients-title">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 id="patients-title" class="section-title">Patient <span class="accent">Resources</span></h2>
+                <p class="section-subtitle">Everything you need for a seamless healthcare experience.</p>
+            </div>
+            
+            <div class="resources-grid">
+                <div class="resource-card reveal">
+                    <div class="resource-icon">
+                        <i class="fa-solid fa-file-invoice" aria-hidden="true"></i>
+                    </div>
+                    <h3>Before Your Visit</h3>
+                    <ul>
+                        <li><a href="#">New patient forms</a></li>
+                        <li><a href="#">Insurance verification</a></li>
+                        <li><a href="#">What to bring checklist</a></li>
+                        <li><a href="#">Pre-appointment instructions</a></li>
+                    </ul>
+                </div>
+                
+                <div class="resource-card reveal">
+                    <div class="resource-icon">
+                        <i class="fa-solid fa-user-injured" aria-hidden="true"></i>
+                    </div>
+                    <h3>Patient Portal</h3>
+                    <ul>
+                        <li><a href="#">View test results</a></li>
+                        <li><a href="#">Message your provider</a></li>
+                        <li><a href="#">Request prescription refills</a></li>
+                        <li><a href="#">Schedule appointments</a></li>
+                    </ul>
+                    <a href="#portal" class="resource-cta">Access Portal <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+                </div>
+                
+                <div class="resource-card reveal">
+                    <div class="resource-icon">
+                        <i class="fa-solid fa-hand-holding-medical" aria-hidden="true"></i>
+                    </div>
+                    <h3>Insurance & Billing</h3>
+                    <ul>
+                        <li><a href="#">Accepted insurance plans</a></li>
+                        <li><a href="#">Billing FAQ</a></li>
+                        <li><a href="#">Financial assistance programs</a></li>
+                        <li><a href="#">Pay your bill online</a></li>
+                    </ul>
+                </div>
+                
+                <div class="resource-card reveal">
+                    <div class="resource-icon">
+                        <i class="fa-solid fa-book-medical" aria-hidden="true"></i>
+                    </div>
+                    <h3>Health Library</h3>
+                    <ul>
+                        <li><a href="#">Condition guides</a></li>
+                        <li><a href="#">Wellness articles</a></li>
+                        <li><a href="#">Preventive care tips</a></li>
+                        <li><a href="#">Medication information</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials" aria-labelledby="testimonials-title">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 id="testimonials-title" class="section-title">What Our <span class="accent">Patients Say</span></h2>
+                <p class="section-subtitle">Real experiences from patients across our communities.</p>
+            </div>
+            
+            <div class="testimonials-grid">
+                <!-- Testimonial 1 -->
+                <blockquote class="testimonial-card reveal">
+                    <div class="rating" aria-label="5 out of 5 stars">
+                        <i class="fa-solid fa-star" aria-hidden="true"></i>
+                        <i class="fa-solid fa-star" aria-hidden="true"></i>
+                        <i class="fa-solid fa-star" aria-hidden="true"></i>
+                        <i class="fa-solid fa-star" aria-hidden="true"></i>
+                        <i class="fa-solid fa-star" aria-hidden="true"></i>
+                    </div>
+                    <p class="testimonial-text">"Dr. Mitchell took the time to listen to my concerns and explained my treatment options clearly. The staff was compassionate and efficient. I finally feel heard."</p>
+                    <footer class="testimonial-author">
+                        <div class="author-avatar" aria-hidden="true">JR</div>
+                        <div>
+                            <cite class="author-name">Jennifer R.</cite>
+                            <span class="author-location">Austin, TX</span>
+                        </div>
+                    </footer>
+                </blockquote>
+                
+                <!-- Testimonial 2 -->
+                <blockquote class="testimonial-card reveal">
+                    <div class="rating" aria-label="5 out of 5 stars">
+                        <i class="fa-solid fa-star" aria-hidden="true"></i>
+                        <i class="fa-solid fa-star" aria-hidden="true"></i>
+                        <i class="fa-solid fa-star" aria-hidden="true"></i>
+                        <i class="fa-solid fa-star" aria-hidden="true"></i>
+                        <i class="fa-solid fa-star" aria-hidden="true"></i>
+                    </div>
+                    <p class="testimonial-text">"The telehealth platform was so easy to use. I had a video visit with my doctor for a rash, got a prescription sent to my pharmacy, and never left home. Incredible convenience."</p>
+                    <footer class="testimonial-author">
+                        <div class="author-avatar" aria-hidden="true">MT</div>
+                        <div>
+                            <cite class="author-name">Michael T.</cite>
+                            <span class="author-location">Denver, CO</span>
+                        </div>
+                    </footer>
+                </blockquote>
+                
+                <!-- Testimonial 3 -->
+                <blockquote class="testimonial-card reveal">
+                    <div class="rating" aria-label="5 out of 5 stars">
+                        <i class="fa-solid fa-star" aria-hidden="true"></i>
+                        <i class="fa-solid fa-star" aria-hidden="true"></i>
+                        <i class="fa-solid fa-star" aria-hidden="true"></i>
+                        <i class="fa-solid fa-star" aria-hidden="true"></i>
+                        <i class="fa-solid fa-star-half-stroke" aria-hidden="true"></i>
+                    </div>
+                    <p class="testimonial-text">"As a parent, I appreciate how Dr. Rodriguez makes my daughter feel comfortable. The office is clean, the wait times are reasonable, and they truly care about our family's health."</p>
+                    <footer class="testimonial-author">
+                        <div class="author-avatar" aria-hidden="true">SL</div>
+                        <div>
+                            <cite class="author-name">Sandra L.</cite>
+                            <span class="author-location">Phoenix, AZ</span>
+                        </div>
+                    </footer>
+                </blockquote>
+            </div>
+            
+            <div class="testimonials-cta reveal">
+                <p>Join thousands of satisfied patients</p>
+                <a href="#appointment" class="btn btn-outline">Schedule Your Visit</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Appointment Section -->
+    <section class="appointment" id="appointment" aria-labelledby="appointment-title">
+        <div class="container">
+            <div class="appointment-grid">
+                <div class="appointment-info reveal">
+                    <h2 id="appointment-title" class="section-title">Schedule Your <span class="accent">Appointment</span></h2>
+                    <p class="section-subtitle">Choose the option that works best for you. We're here to make healthcare accessible.</p>
+                    
+                    <div class="appointment-options">
+                        <div class="option-card">
+                            <div class="option-icon">
+                                <i class="fa-regular fa-calendar-check" aria-hidden="true"></i>
+                            </div>
+                            <h3>In-Person Visit</h3>
+                            <p>Visit one of our modern, comfortable clinics. Same-day appointments often available.</p>
+                            <a href="#locations" class="option-link">Find a Location <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                        
+                        <div class="option-card featured">
+                            <div class="option-badge">Most Popular</div>
+                            <div class="option-icon">
+                                <i class="fa-solid fa-video" aria-hidden="true"></i>
+                            </div>
+                            <h3>Telehealth Visit</h3>
+                            <p>Secure video consultation from home. Ideal for follow-ups, minor concerns, and mental health.</p>
+                            <a href="#telehealth" class="option-link">Start Virtual Visit <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                        
+                        <div class="option-card">
+                            <div class="option-icon">
+                                <i class="fa-solid fa-phone" aria-hidden="true"></i>
+                            </div>
+                            <h3>Phone Consultation</h3>
+                            <p>Speak with a nurse or provider by phone for quick questions and guidance.</p>
+                            <a href="tel:+18005551234" class="option-link">Call Now <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="appointment-notes">
+                        <p><i class="fa-solid fa-circle-info" aria-hidden="true"></i> <strong>New patients:</strong> Please allow 15 extra minutes for paperwork.</p>
+                        <p><i class="fa-solid fa-circle-info" aria-hidden="true"></i> <strong>Insurance:</strong> We accept most major plans. Verify your coverage <a href="#insurance">here</a>.</p>
+                    </div>
+                </div>
+                
+                <div class="appointment-form-wrapper reveal">
+                    <form class="appointment-form" id="appointment-form" novalidate>
+                        <div class="form-section">
+                            <h3>Patient Information</h3>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="firstName">First Name *</label>
+                                    <input type="text" id="firstName" name="firstName" required autocomplete="given-name" />
+                                    <span class="error-message" id="firstName-error"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastName">Last Name *</label>
+                                    <input type="text" id="lastName" name="lastName" required autocomplete="family-name" />
+                                    <span class="error-message" id="lastName-error"></span>
+                                </div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="dob">Date of Birth *</label>
+                                    <input type="date" id="dob" name="dob" required />
+                                    <span class="error-message" id="dob-error"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Phone Number *</label>
+                                    <input type="tel" id="phone" name="phone" required autocomplete="tel" placeholder="(555) 123-4567" pattern="^\(?\d{3}\)?[-.\s]?\d{3}[-.\s]?\d{4}$" />
+                                    <span class="error-message" id="phone-error"></span>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" autocomplete="email" placeholder="you@example.com" />
+                                <span class="error-message" id="email-error"></span>
+                            </div>
+                        </div>
+                        
+                        <div class="form-section">
+                            <h3>Appointment Details</h3>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="service">Service Needed *</label>
+                                    <select id="service" name="service" required>
+                                        <option value="">Select a service</option>
+                                        <option value="primary">Primary Care Visit</option>
+                                        <option value="specialty">Specialty Consultation</option>
+                                        <option value="telehealth">Telehealth Visit</option>
+                                        <option value="urgent">Urgent Care</option>
+                                        <option value="followup">Follow-up Appointment</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                    <span class="error-message" id="service-error"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="provider">Preferred Provider</label>
+                                    <select id="provider" name="provider">
+                                        <option value="">No preference</option>
+                                        <option value="mitchell">Dr. Sarah Mitchell</option>
+                                        <option value="chen">Dr. James Chen</option>
+                                        <option value="rodriguez">Dr. Maria Rodriguez</option>
+                                        <option value="any">Any available provider</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="date">Preferred Date</label>
+                                    <input type="date" id="date" name="date" min="" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="time">Preferred Time</label>
+                                    <select id="time" name="time">
+                                        <option value="">Any time</option>
+                                        <option value="morning">Morning (8am-12pm)</option>
+                                        <option value="afternoon">Afternoon (12pm-5pm)</option>
+                                        <option value="evening">Evening (5pm-8pm)</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="reason">Reason for Visit *</label>
+                                <textarea id="reason" name="reason" rows="3" required placeholder="Briefly describe your symptoms or reason for visit..."></textarea>
+                                <span class="error-message" id="reason-error"></span>
+                                <small class="form-hint">Please do not include sensitive health information. This form is not secure for protected health information (PHI).</small>
+                            </div>
+                        </div>
+                        
+                        <div class="form-section">
+                            <div class="form-group checkbox-group">
+                                <input type="checkbox" id="consent" name="consent" required />
+                                <label for="consent">
+                                    I consent to receive appointment confirmations and health-related communications via phone, text, or email. 
+                                    <a href="#privacy" target="_blank">Privacy Policy</a>
+                                </label>
+                                <span class="error-message" id="consent-error"></span>
+                            </div>
+                            
+                            <div class="form-group checkbox-group">
+                                <input type="checkbox" id="hipaa" name="hipaa" required />
+                                <label for="hipaa">
+                                    I understand this form is not HIPAA-secure and will not transmit protected health information. 
+                                    For sensitive concerns, please call directly.
+                                </label>
+                                <span class="error-message" id="hipaa-error"></span>
+                            </div>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-full" id="submit-btn">
+                            <span class="btn-text">Request Appointment</span>
+                            <span class="btn-spinner" aria-hidden="true"></span>
+                        </button>
+                        
+                        <div class="form-message" id="form-message" role="status" aria-live="polite"></div>
+                        
+                        <p class="form-disclaimer">
+                            <i class="fa-solid fa-shield-halved" aria-hidden="true"></i>
+                            <strong>Privacy Notice:</strong> This form is for appointment requests only. 
+                            For medical emergencies, call <a href="tel:911">911</a>. 
+                            For urgent medical concerns, call our office directly.
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Locations Section -->
+    <section class="locations" id="locations" aria-labelledby="locations-title">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 id="locations-title" class="section-title">Our <span class="accent">Locations</span></h2>
+                <p class="section-subtitle">Conveniently located clinics serving communities across the United States.</p>
+            </div>
+            
+            <div class="locations-grid">
+                <!-- Location 1 -->
+                <article class="location-card reveal">
+                    <div class="location-header">
+                        <h3 class="location-name">Downtown Medical Center</h3>
+                        <span class="location-type">Primary Care • Specialty Care • Urgent Care</span>
+                    </div>
+                    <div class="location-body">
+                        <p class="location-address">
+                            <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                            123 Healthcare Blvd, Suite 100<br>
+                            Austin, TX 78701
+                        </p>
+                        <div class="location-hours">
+                            <p><strong>Hours:</strong></p>
+                            <ul>
+                                <li>Mon-Fri: 7:00 AM - 8:00 PM</li>
+                                <li>Sat: 8:00 AM - 4:00 PM</li>
+                                <li>Sun: 9:00 AM - 2:00 PM</li>
+                            </ul>
+                        </div>
+                        <div class="location-contact">
+                            <a href="tel:+15125551000" class="contact-link"><i class="fa-solid fa-phone" aria-hidden="true"></i> (512) 555-1000</a>
+                            <a href="#directions" class="contact-link"><i class="fa-solid fa-directions" aria-hidden="true"></i> Get Directions</a>
+                        </div>
+                    </div>
+                    <div class="location-footer">
+                        <a href="#appointment" class="btn btn-outline btn-sm">Book at This Location</a>
+                    </div>
+                </article>
+                
+                <!-- Location 2 -->
+                <article class="location-card reveal">
+                    <div class="location-header">
+                        <h3 class="location-name">Westside Family Clinic</h3>
+                        <span class="location-type">Primary Care • Pediatrics • Telehealth</span>
+                    </div>
+                    <div class="location-body">
+                        <p class="location-address">
+                            <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                            456 Wellness Way<br>
+                            Denver, CO 80202
+                        </p>
+                        <div class="location-hours">
+                            <p><strong>Hours:</strong></p>
+                            <ul>
+                                <li>Mon-Fri: 8:00 AM - 6:00 PM</li>
+                                <li>Sat: 9:00 AM - 1:00 PM</li>
+                                <li>Sun: Closed</li>
+                            </ul>
+                        </div>
+                        <div class="location-contact">
+                            <a href="tel:+13035552000" class="contact-link"><i class="fa-solid fa-phone" aria-hidden="true"></i> (303) 555-2000</a>
+                            <a href="#directions" class="contact-link"><i class="fa-solid fa-directions" aria-hidden="true"></i> Get Directions</a>
+                        </div>
+                    </div>
+                    <div class="location-footer">
+                        <a href="#appointment" class="btn btn-outline btn-sm">Book at This Location</a>
+                    </div>
+                </article>
+                
+                <!-- Location 3 -->
+                <article class="location-card reveal">
+                    <div class="location-header">
+                        <h3 class="location-name">Desert Valley Health Hub</h3>
+                        <span class="location-type">Primary Care • Urgent Care • Lab Services</span>
+                    </div>
+                    <div class="location-body">
+                        <p class="location-address">
+                            <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                            789 Care Circle<br>
+                            Phoenix, AZ 85001
+                        </p>
+                        <div class="location-hours">
+                            <p><strong>Hours:</strong></p>
+                            <ul>
+                                <li>Mon-Fri: 7:00 AM - 9:00 PM</li>
+                                <li>Sat-Sun: 8:00 AM - 5:00 PM</li>
+                            </ul>
+                        </div>
+                        <div class="location-contact">
+                            <a href="tel:+16025553000" class="contact-link"><i class="fa-solid fa-phone" aria-hidden="true"></i> (602) 555-3000</a>
+                            <a href="#directions" class="contact-link"><i class="fa-solid fa-directions" aria-hidden="true"></i> Get Directions</a>
+                        </div>
+                    </div>
+                    <div class="location-footer">
+                        <a href="#appointment" class="btn btn-outline btn-sm">Book at This Location</a>
+                    </div>
+                </article>
+            </div>
+            
+            <div class="locations-cta reveal">
+                <p>Don't see your area?</p>
+                <a href="#contact" class="btn btn-primary">Contact Us for More Locations</a>
+            </div>
+            
+            <!-- Map Placeholder -->
+            <div class="map-container reveal">
+                <div class="map-placeholder">
+                    <i class="fa-solid fa-map-location-dot" aria-hidden="true"></i>
+                    <p>Interactive map with all locations</p>
+                    <a href="https://maps.google.com" target="_blank" rel="noopener" class="map-link">View on Google Maps</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Brand Column -->
+                <div class="footer-brand">
+                    <a href="#" class="logo footer-logo" aria-label="American Healthcare Partners Home">
+                        <div class="logo-icon" aria-hidden="true">
+                            <i class="fa-solid fa-heart-pulse"></i>
+                        </div>
+                        <div class="logo-text">
+                            <span class="logo-name">American Healthcare</span>
+                            <span class="logo-tagline">Partners</span>
+                        </div>
+                    </a>
+                    <p class="footer-desc">
+                        Providing compassionate, high-quality healthcare to individuals and families across the United States since 1998.
+                    </p>
+                    <div class="footer-contact">
+                        <a href="tel:+18005551234" class="footer-contact-item">
+                            <i class="fa-solid fa-phone" aria-hidden="true"></i>
+                            <span>1-800-555-1234</span>
+                        </a>
+                        <a href="mailto:care@americanhealthcare.com" class="footer-contact-item">
+                            <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                            <span>care@americanhealthcare.com</span>
+                        </a>
+                    </div>
+                    <div class="social-links" aria-label="Social media">
+                        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter" aria-hidden="true"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Services Column -->
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">Primary Care</a></li>
+                        <li><a href="#services">Specialty Care</a></li>
+                        <li><a href="#telehealth">Telehealth</a></li>
+                        <li><a href="#services">Urgent Care</a></li>
+                        <li><a href="#services">Preventive Care</a></li>
+                        <li><a href="#services">Women's Health</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Patients Column -->
+                <div class="footer-links">
+                    <h4>Patient Resources</h4>
+                    <ul>
+                        <li><a href="#portal">Patient Portal</a></li>
+                        <li><a href="#insurance">Insurance & Billing</a></li>
+                        <li><a href="#forms">New Patient Forms</a></li>
+                        <li><a href="#library">Health Library</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#contact">Contact Support</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Company Column -->
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#providers">Our Providers</a></li>
+                        <li><a href="#locations">Locations</a></li>
+                        <li><a href="#careers">Careers</a></li>
+                        <li><a href="#news">News & Updates</a></li>
+                        <li><a href="#contact">Media Inquiries</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <div class="footer-legal">
+                    <p>&copy; <span id="year"></span> American Healthcare Partners. All rights reserved.</p>
+                    <nav class="footer-legal-links" aria-label="Legal navigation">
+                        <a href="#privacy">Privacy Policy</a>
+                        <a href="#terms">Terms of Use</a>
+                        <a href="#hipaa">HIPAA Notice</a>
+                        <a href="#accessibility">Accessibility</a>
+                        <a href="#sitemap">Sitemap</a>
+                    </nav>
+                </div>
+                
+                <!-- Accreditation Badges -->
+                <div class="footer-badges" role="list" aria-label="Accreditations">
+                    <div class="badge" role="listitem">
+                        <i class="fa-solid fa-certificate" aria-hidden="true"></i>
+                        <span>Joint Commission</span>
+                    </div>
+                    <div class="badge" role="listitem">
+                        <i class="fa-solid fa-shield-heart" aria-hidden="true"></i>
+                        <span>HIPAA Compliant</span>
+                    </div>
+                    <div class="badge" role="listitem">
+                        <i class="fa-solid fa-award" aria-hidden="true"></i>
+                        <span>NCQA Recognized</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Critical Notice -->
+            <div class="footer-notice">
+                <p>
+                    <i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i>
+                    <strong>Medical Emergency?</strong> Call <a href="tel:911">911</a> or go to your nearest emergency room immediately. 
+                    This website is not a substitute for professional medical advice, diagnosis, or treatment.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Action Button -->
+    <a href="tel:+18005551234" class="floating-cta" aria-label="Call to schedule appointment">
+        <div class="floating-icon">
+            <i class="fa-solid fa-phone" aria-hidden="true"></i>
+        </div>
+        <span class="floating-text">Schedule Now</span>
+    </a>
+
+    <!-- Patient Portal Modal (Hidden by Default) -->
+    <div class="modal" id="portal-modal" role="dialog" aria-modal="true" aria-labelledby="portal-modal-title" hidden>
+        <div class="modal-overlay" id="portal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="portal-close" aria-label="Close modal">
+                <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+            </button>
+            <div class="modal-header">
+                <h3 id="portal-modal-title">Patient Portal Access</h3>
+            </div>
+            <div class="modal-body">
+                <p>Access your secure patient portal to:</p>
+                <ul>
+                    <li>View test results and medical records</li>
+                    <li>Message your healthcare team</li>
+                    <li>Request prescription refills</li>
+                    <li>Schedule and manage appointments</li>
+                </ul>
+                <div class="portal-actions">
+                    <a href="https://portal.example.com" target="_blank" rel="noopener" class="btn btn-primary btn-full">
+                        <i class="fa-solid fa-right-to-bracket" aria-hidden="true"></i>
+                        Launch Patient Portal
+                    </a>
+                    <p class="portal-note">
+                        <small>First-time users: Click "Forgot Username" on the portal login page to register.</small>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+    
+    <!-- Structured Data (JSON-LD) for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalOrganization",
+      "name": "American Healthcare Partners",
+      "image": "https://example.com/logo.jpg",
+      "@id": "https://example.com",
+      "url": "https://example.com",
+      "telephone": "+1-800-555-1234",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "123 Healthcare Blvd",
+        "addressLocality": "Austin",
+        "addressRegion": "TX",
+        "postalCode": "78701",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 30.2672,
+        "longitude": -97.7431
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "07:00",
+          "closes": "20:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "08:00",
+          "closes": "16:00"
+        }
+      ],
+      "medicalSpecialty": ["PrimaryCare", "Cardiology", "Pediatrics"],
+      "availableService": [
+        {
+          "@type": "MedicalProcedure",
+          "name": "Primary Care Visit"
+        },
+        {
+          "@type": "MedicalProcedure", 
+          "name": "Telehealth Consultation"
+        }
+      ],
+      "acceptsNewPatients": true,
+      "isAcceptingNewPatients": true
+    }
+    </script>
+</body>
+</html>
